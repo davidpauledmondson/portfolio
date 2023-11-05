@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="This is a website for the computer programmer David Paul Edmondson. David is a full-stack developer that loves make ideas digital reality.">
+    <meta name="keywords" content="David, Paul, Edmondson, computer, programmer, coder, html, css, javascript, react, job, portfolio, front-end, back-end, full-stack, developer, ui/ux">
+    <meta name="author" content="David Paul Edmondson">
+
+    <title>David Paul Edmondson Portfolio Website - Face Recognition Brain</title>
+
+    <!-- NORMALIZE LINK TO MAKE THE WEBSITE LOOK THE SAME ON ALL BROWSERS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    
+    <!-- Roboto Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Courier Prime Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="../img/DPElogo1.png">
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/DPElogo1.png" alt="DPE Logo" class="logo-image"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#services" class="nav__link">What I Do</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="../certificates.html" class="nav__link">My Certificates</a></li>
+                </ul>
+            </nav>
+        </div>     
+    </header> 
+    
+    <!-- Project Title Section -->
+    <section class="intro">
+        <div class="container">
+                <h1 class="section__title section__title--intro">
+                    <strong>Face<br>Recognition<br>Brain</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">A React Project</p>            
+            <img src="../img/face-recog-brain-images/face-recognition-brain-crop-2.png" alt="Face Recognition Brain App" class="intro__img">    
+        </div>
+    </section>
+
+    <div class="portfolio-item-individual">
+        <div class="container">
+            <p>This was the final project for my main full-stack developer course. It realy helped my see the whole picture on how a React project can be created from the ground up.</p>
+            <p>This project takes JPEG pictures that users submit, searches for a face in the image, and counts the total number of pictures the user has scanned.</p>
+            <p>I added extra parts to the project with including, a favicon, enter-key-press detection for the sign-in button and detect button, and an alert when the user inputs the incorrect username and/or password.</p>
+            <p class="text-emphasis">Please check out the project link below.</p>
+            <div class="project-flex">
+                <a href="https://davidpauledmondson.github.io/smart-brain-face-recognition/" class="btn project-btn" target="_blank">Project Link</a>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="mailto:dpe107@post.com" class="footer__link">dpe107@post.com</a>
+            <ul class="social-list">
+                <!-- GitHub Link -->
+                <li class="social-list__item">
+                    <a href="https://github.com/davidpauledmondson" class="social-list__link" target="_blank">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-list__link-icon">
+                            <path d="M8.49121 19.4043C8.49121 19.502 8.37891 19.5801 8.2373 19.5801C8.07617 19.5947 7.96387 19.5166 7.96387 19.4043C7.96387 19.3066 8.07617 19.2285 8.21777 19.2285C8.36426 19.2139 8.49121 19.292 8.49121 19.4043ZM6.97266 19.1846C6.93848 19.2822 7.03613 19.3945 7.18262 19.4238C7.30957 19.4727 7.45605 19.4238 7.48535 19.3262C7.51465 19.2285 7.42188 19.1162 7.27539 19.0723C7.14844 19.0381 7.00684 19.0869 6.97266 19.1846ZM9.13086 19.1016C8.98926 19.1357 8.8916 19.2285 8.90625 19.3408C8.9209 19.4385 9.04785 19.502 9.19434 19.4678C9.33594 19.4336 9.43359 19.3408 9.41895 19.2432C9.4043 19.1504 9.27246 19.0869 9.13086 19.1016ZM12.3438 0.390625C5.57129 0.390625 0.390625 5.53223 0.390625 12.3047C0.390625 17.7197 3.79883 22.3535 8.66699 23.9844C9.29199 24.0967 9.51172 23.7109 9.51172 23.3936C9.51172 23.0908 9.49707 21.4209 9.49707 20.3955C9.49707 20.3955 6.0791 21.1279 5.36133 18.9404C5.36133 18.9404 4.80469 17.5195 4.00391 17.1533C4.00391 17.1533 2.88574 16.3867 4.08203 16.4014C4.08203 16.4014 5.29785 16.499 5.9668 17.6611C7.03613 19.5459 8.82813 19.0039 9.52637 18.6816C9.63867 17.9004 9.95605 17.3584 10.3076 17.0361C7.57813 16.7334 4.82422 16.3379 4.82422 11.6406C4.82422 10.2979 5.19531 9.62402 5.97656 8.76465C5.84961 8.44727 5.43457 7.13867 6.10352 5.44922C7.12402 5.13184 9.47266 6.76758 9.47266 6.76758C10.4492 6.49414 11.499 6.35254 12.5391 6.35254C13.5791 6.35254 14.6289 6.49414 15.6055 6.76758C15.6055 6.76758 17.9541 5.12695 18.9746 5.44922C19.6436 7.14355 19.2285 8.44727 19.1016 8.76465C19.8828 9.62891 20.3613 10.3027 20.3613 11.6406C20.3613 16.3525 17.4854 16.7285 14.7559 17.0361C15.2051 17.4219 15.5859 18.1543 15.5859 19.3018C15.5859 20.9473 15.5713 22.9834 15.5713 23.3838C15.5713 23.7012 15.7959 24.0869 16.416 23.9746C21.2988 22.3535 24.6094 17.7197 24.6094 12.3047C24.6094 5.53223 19.1162 0.390625 12.3438 0.390625ZM5.13672 17.2314C5.07324 17.2803 5.08789 17.3926 5.1709 17.4854C5.24902 17.5635 5.36133 17.5977 5.4248 17.5342C5.48828 17.4854 5.47363 17.373 5.39063 17.2803C5.3125 17.2021 5.2002 17.168 5.13672 17.2314ZM4.60938 16.8359C4.5752 16.8994 4.62402 16.9775 4.72168 17.0264C4.7998 17.0752 4.89746 17.0605 4.93164 16.9922C4.96582 16.9287 4.91699 16.8506 4.81934 16.8018C4.72168 16.7725 4.64355 16.7871 4.60938 16.8359ZM6.19141 18.5742C6.11328 18.6377 6.14258 18.7842 6.25488 18.877C6.36719 18.9893 6.50879 19.0039 6.57227 18.9258C6.63574 18.8623 6.60645 18.7158 6.50879 18.623C6.40137 18.5107 6.25488 18.4961 6.19141 18.5742ZM5.63477 17.8564C5.55664 17.9053 5.55664 18.0322 5.63477 18.1445C5.71289 18.2568 5.84473 18.3057 5.9082 18.2568C5.98633 18.1934 5.98633 18.0664 5.9082 17.9541C5.83984 17.8418 5.71289 17.793 5.63477 17.8564Z" fill="var(--clr-accent)"/>
+                        </svg>   
+                    </a>
+                </li>
+                <!-- LinkedIn Link -->
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/david-paul-edmondson-87a17412b/" class="social-list__link" target="_blank">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-list__link-icon">
+                            <path d="M22.2222 0C22.9589 0 23.6655 0.292658 24.1864 0.813592C24.7073 1.33453 25 2.04107 25 2.77778V22.2222C25 22.9589 24.7073 23.6655 24.1864 24.1864C23.6655 24.7073 22.9589 25 22.2222 25H2.77778C2.04107 25 1.33453 24.7073 0.813592 24.1864C0.292658 23.6655 0 22.9589 0 22.2222V2.77778C0 2.04107 0.292658 1.33453 0.813592 0.813592C1.33453 0.292658 2.04107 0 2.77778 0H22.2222ZM21.5278 21.5278V14.1667C21.5278 12.9658 21.0507 11.8142 20.2016 10.965C19.3525 10.1159 18.2008 9.63889 17 9.63889C15.8194 9.63889 14.4444 10.3611 13.7778 11.4444V9.90278H9.90278V21.5278H13.7778V14.6806C13.7778 13.6111 14.6389 12.7361 15.7083 12.7361C16.224 12.7361 16.7186 12.941 17.0833 13.3056C17.4479 13.6703 17.6528 14.1649 17.6528 14.6806V21.5278H21.5278ZM5.38889 7.72222C6.00773 7.72222 6.60122 7.47639 7.0388 7.0388C7.47639 6.60122 7.72222 6.00773 7.72222 5.38889C7.72222 4.09722 6.68056 3.04167 5.38889 3.04167C4.76637 3.04167 4.16934 3.28896 3.72915 3.72915C3.28896 4.16934 3.04167 4.76637 3.04167 5.38889C3.04167 6.68056 4.09722 7.72222 5.38889 7.72222ZM7.31944 21.5278V9.90278H3.47222V21.5278H7.31944Z" fill="var(--clr-accent)"/>
+                        </svg>
+                    </a>
+                </li>
+                <!-- CodePen Link -->
+                <li class="social-list__item">
+                    <a href="https://codepen.io/DavidPaulEdmondson" class="social-list__link" target="_blank">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-list__link-icon">
+                            <path d="M24.5256 7.79805L13.0999 0.180863C12.7099 -0.0591269 12.2937 -0.0613241 11.9001 0.180863L0.474316 7.79805C0.181348 7.99331 0 8.34214 0 8.69087V16.308C0 16.6568 0.181348 17.0056 0.474365 17.2009L11.9001 24.8191C12.2901 25.0591 12.7063 25.0613 13.0999 24.8191L24.5257 17.2009C24.8187 17.0056 25 16.6568 25 16.308V8.69087C25 8.34214 24.8187 7.99331 24.5256 7.79805ZM13.5742 3.08257L21.9866 8.69087L18.2338 11.2021L13.5742 8.09097V3.08257ZM11.4258 3.08257V8.09097L6.76616 11.2021L3.01338 8.69087L11.4258 3.08257ZM2.14844 10.6998L4.84097 12.4995L2.14844 14.2991V10.6998ZM11.4258 21.9164L3.01338 16.3081L6.76616 13.7969L11.4258 16.908V21.9164ZM12.5 15.0385L8.70532 12.4995L12.5 9.9604L16.2947 12.4995L12.5 15.0385ZM13.5742 21.9164V16.908L18.2338 13.7969L21.9866 16.3081L13.5742 21.9164ZM22.8516 14.2991L20.159 12.4995L22.8516 10.6998V14.2991Z" fill="var(--clr-accent)"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>    
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
