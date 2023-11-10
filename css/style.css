@@ -116,6 +116,7 @@ h3 {
 }
 
 .section__title {
+    letter-spacing: 2px;
     margin-bottom: .25em;
 }
 
@@ -164,7 +165,6 @@ header {
 }
 
 .container {
-    /* min-width: 315px; */
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2em;
@@ -200,11 +200,11 @@ header {
     background-color: var(--clr-black);
     color: var(--clr-light);
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    min-width: 320px;
     z-index: 1000;
-
+        
     /* ---Old Nav Bar Transition--- */
     /* transform: translateY(-6000%); */
     /* transition: transform 5000ms ease-in-out; */
@@ -219,11 +219,11 @@ header {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    /* justify-content: flex-start; */
+    /* justify-content: space-evenly; */
     align-items: center;
+    gap: 2em;
     margin: 0;
-    padding: 0;   
+    padding: 6em 0;   
 }
 
 /* .nav__item {
@@ -234,6 +234,7 @@ header {
     color: inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
@@ -329,9 +330,14 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
-@media (min-width: 625px) {
+@media (min-width: 630px) {
     .intro-flex {
         display: flex;
         margin-left: auto;
@@ -341,14 +347,15 @@ header {
     }
 
     .intro-text {
-        width: 50%;
+        /* width: 60%; */
+        width: 100%;
         margin: 0 auto;
     }
 
     .intro-flex img {
-        width: 50%;
+        /* width: 40%; */
         /* height: 100%; */
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 }
 
@@ -422,6 +429,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    margin: 0 auto;
 }
 
 .cert-btn {
@@ -459,7 +467,8 @@ header {
     .about-me__img {
          grid-area: img;
          position: relative;
-         z-index: 2;   
+         z-index: 2;
+            
     }
 
     .cert-btn {
@@ -561,6 +570,10 @@ header {
 /*-------------------------------------- 
     Individual portfolio item styles 
 ----------------------------------------*/
+.portfolio__intro__img {
+    box-shadow: var(--bs);    
+}
+
 .portfolio-item-individual {
     padding-bottom: 2em;
     margin: 0 auto;
