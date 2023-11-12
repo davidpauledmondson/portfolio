@@ -331,10 +331,7 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     margin: 0 auto;
-    height: 100vh;
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
+    width: 70%;
 }
 
 @media (min-width: 630px) {
@@ -347,15 +344,12 @@ header {
     }
 
     .intro-text {
-        /* width: 60%; */
-        width: 100%;
+        width: 70%;
         margin: 0 auto;
     }
 
     .intro-flex img {
-        /* width: 40%; */
-        /* height: 100%; */
-        /* margin: 0 auto; */
+        width: 30%;
     }
 }
 
