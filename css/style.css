@@ -610,3 +610,19 @@ header {
 .cert__img {  
     max-width: 1000px;
 }
+
+/*-------------------------------------- 
+    Special Effects
+----------------------------------------*/
+/* @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+.fade-in-effect {
+    animation: fade-in-animation 1200ms linear;
+} */
