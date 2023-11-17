@@ -185,15 +185,16 @@ header {
 
 .logo-image {
     position: relative;
-    z-index: 2000;
+    z-index: 1000;
     width: 50px;
     display: block;
+    border-radius: 4px;
 }
 
-.logo-image:active {
+/* .logo-image:active {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
-}
+} */
 
 .nav {
     position: absolute;
@@ -252,6 +253,7 @@ header {
     /* right: 1em; */
     /* border: 3px solid var(--clr-accent); */
     border: 0px;
+    border-radius: 4px;
     z-index: 2000;
 }
 
@@ -433,7 +435,7 @@ header {
     justify-content: center;
 }
 
-@media (min-width: 625px) {
+@media (min-width: 630px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 250px;
@@ -491,6 +493,7 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .portfolio__img {
