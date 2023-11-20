@@ -619,7 +619,6 @@ header {
 .portfolio__intro__img {
     /* box-shadow: var(--bs); */
     box-shadow: 15px 15px 15px -2px var(--shadowColor);
-    /* box-shadow: 15px 15px 12px 2px var(--shadowColor);     */
 }
 
 .portfolio-item-individual {
