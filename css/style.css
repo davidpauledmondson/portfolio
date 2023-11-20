@@ -16,10 +16,16 @@
     --fw-bold: 900;
 
     --clr-light: rgb(235, 235, 237);
+    --clr-light-hover: rgb(215, 215, 217);
+    --clr-light-active: rgb(195, 195, 197);
     --clr-dark: rgb(50, 50, 50);
     --clr-black: rgb(17, 17, 17);
+    
     /* Below is the New Accent Color that is the same as the face recognition box */
     --clr-accent: rgb(20, 157, 242);
+    --clr-accent-hover: rgb(0, 137, 222);
+    --clr-accent-active: rgb(0, 117, 202);
+    
     /* Below is Original Accent Color */
     /* --clr-accent: rgb(21, 217, 183); */
 
@@ -29,8 +35,15 @@
     --fs-body: 1rem;
     --fs-logo: 1.5rem;
 
+    /* Original background shadow (bs) */
+    /* --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15); */
+          
+    /* New background shadow (bs) */
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15); 
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+          
+    --shadowColor: rgb(128, 128, 128);      
 }
 
 /*-------------------------------------- 
@@ -65,7 +78,12 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-:focus {
+/* :focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+} */
+
+:focus-visible {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
@@ -89,9 +107,16 @@ strong {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    background-color: var(--clr-accent-hover);
+    color: var(--clr-light-hover);
 }
 
+.btn:active {
+    /* transform: scale(1.1); */
+    background-color: var(--clr-accent-active);
+    color: var(--clr-light-active);
+}
 
 /*-------------------------------------- 
     Typography 
@@ -191,6 +216,14 @@ header {
     border-radius: 4px;
 }
 
+.logo-image:hover {
+    opacity: .8;
+}
+
+.logo-image:active {
+    opacity: .6;
+}
+
 /* .logo-image:active {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
@@ -241,6 +274,10 @@ header {
 
 .nav__link:hover {
     color: var(--clr-accent);
+}
+
+.nav__link:active {
+    color: var(--clr-accent-active);
 }
 
 .nav-toggle {
@@ -331,9 +368,10 @@ header {
 }
 
 .intro__img {
-    box-shadow: var(--bs);
     margin: 0 auto;
     width: 70%;
+    /* box-shadow: var(--bs); */
+    box-shadow: 15px 15px 15px -2px var(--shadowColor);
 }
 
 @media (min-width: 630px) {
@@ -424,7 +462,8 @@ header {
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
+    /* box-shadow: var(--bs); */
+    box-shadow: 15px 15px 15px -2px var(--shadowColor);
     margin: 0 auto;
 }
 
@@ -464,7 +503,7 @@ header {
          grid-area: img;
          position: relative;
          z-index: 2;
-            
+         box-shadow: var(--bs);   
     }
 
     .cert-btn {
@@ -513,6 +552,10 @@ header {
     opacity: .5;
 }
 
+.portfolio__item:active {
+    background: var(--clr-accent-active);
+}
+
 /*-------------------------------------- 
     Footer 
 ----------------------------------------*/
@@ -544,6 +587,12 @@ header {
     opacity: .7;
 }
 
+.footer__link:active,
+.social-list__link:active {
+    opacity: .5;
+}
+
+
 .footer__link:hover {
     text-decoration: underline;
 }
@@ -568,7 +617,9 @@ header {
     Individual portfolio item styles 
 ----------------------------------------*/
 .portfolio__intro__img {
-    box-shadow: var(--bs);    
+    /* box-shadow: var(--bs); */
+    box-shadow: 15px 15px 15px -2px var(--shadowColor);
+    /* box-shadow: 15px 15px 12px 2px var(--shadowColor);     */
 }
 
 .portfolio-item-individual {
